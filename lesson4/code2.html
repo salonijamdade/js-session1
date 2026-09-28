@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .add_cart{
+            background-color: yellow;
+            border-color: black;
+        }
+
+        .buy_now{
+            background-color: orange;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="
+        document.getElementById('quantity').innerHTML=cartQuantity;
+        ">show</button>
+    <button onclick="
+        cartQuantity=cartQuantity+1
+    ">add</button>
+    <button onclick="
+        cartQuantity=cartQuantity+2
+    ">+2</button>
+    <button onclick="
+        cartQuantity=cartQuantity+3
+    " >+3</button>
+    <button onclick="
+        cartQuantity=0
+    ">clear</button>
+    <p id="quantity"></p>
+    <script>
+        let cartQuantity=0;
+    </script>
+</body>
+</html>

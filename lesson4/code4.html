@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <button onclick="
+        result = 5 + 2;
+        document.getElementById('answer').innerHTML = result;
+    ">Add</button>
+
+    <button onclick="
+        result = 5 - 2;
+        document.getElementById('answer').innerHTML = result;
+    ">Subtract</button>
+
+    <button onclick="
+        result = 5 * 2;
+        document.getElementById('answer').innerHTML = result;
+    ">Multiply</button>
+
+    <button onclick="
+        result = 5 / 2;
+        document.getElementById('answer').innerHTML = result;
+    ">Divide</button>
+
+    <button onclick="
+        result = 0;
+        document.getElementById('answer').innerHTML = result;
+    ">Clear</button>
+
+    <p id="answer"></p>
+
+    <script>
+        let result = 0;
+    </script>
+
+</body>
+</html>
